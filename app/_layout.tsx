@@ -17,6 +17,7 @@ import { BarChart2, ChefHat, Cookie, CookingPot, Home, Settings, Settings2, Soup
 import { LastDataRegistered } from './components/LastDataRegistered'
 import { MenuItem } from './components/MenuItem'
 import { Menu } from './components/Menu'
+import { CardMonitor } from './components/CardMonitor'
 
 export {
   // Catch any errors thrown by the Layout component.
@@ -60,8 +61,10 @@ function RootLayoutNav() {
       <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
 
         <View f={1} jc={'center'} ai={'center'}>
-          {/*         
-          <LastDataRegistered
+                   
+
+        <CardMonitor/>
+         {/* <LastDataRegistered
             dataRegistered={
               <DataRegistered
                 value={85}
@@ -73,14 +76,16 @@ function RootLayoutNav() {
               />
             }
           /> */}
-          <Menu>
+
+
+          {/* <Menu>
             <MenuItem
               icon={Home}
               title={"Home"}
               selected={true}
             />
             <MenuItem
-              icon={Utensils}
+              icon={BarChart2}
               title={"Refeições"}
               selected={false}
             />
@@ -94,9 +99,9 @@ function RootLayoutNav() {
               title={"Config"}
               selected={false}
             />
-          </Menu>
+          </Menu> */}
 
-
+         
 
           {/* <SelectRefeicoes items={itensDoArray} /> */}
           {/* <CardInicial /> */}
