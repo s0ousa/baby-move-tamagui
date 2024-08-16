@@ -18,6 +18,7 @@ import { LastDataRegistered } from './components/LastDataRegistered'
 import { MenuItem } from './components/MenuItem'
 import { Menu } from './components/Menu'
 import { CardMonitor } from './components/CardMonitor'
+import { HeartPulse } from "@tamagui/lucide-icons"
 
 export {
   // Catch any errors thrown by the Layout component.
@@ -61,10 +62,19 @@ function RootLayoutNav() {
       <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
 
         <View f={1} jc={'center'} ai={'center'}>
-                   
 
-        <CardMonitor/>
-         {/* <LastDataRegistered
+
+          <CardMonitor
+            value={85}
+            unity={"BPM"}
+            title={"Frequência cardíaca da gestante"}
+            icon={HeartPulse}
+            min={78}
+            max={117}
+            backgroundColor={"#FFE2E5"}
+            iconColor={"#ff0000"}
+          />
+          {/* <LastDataRegistered
             dataRegistered={
               <DataRegistered
                 value={85}
@@ -101,7 +111,7 @@ function RootLayoutNav() {
             />
           </Menu> */}
 
-         
+
 
           {/* <SelectRefeicoes items={itensDoArray} /> */}
           {/* <CardInicial /> */}
