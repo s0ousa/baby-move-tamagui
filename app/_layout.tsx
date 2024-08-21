@@ -21,6 +21,7 @@ import { CardMonitor } from './components/CardMonitor'
 import { HeartPulse, Search } from "@tamagui/lucide-icons"
 import CardDoctor from './components/CardDoctor'
 import { DoctorsView } from './pages/DoctorsView/DoctorsView'
+import { HomeView } from './pages/HomeView/HomeView'
 
 export {
   // Catch any errors thrown by the Layout component.
@@ -125,11 +126,11 @@ function RootLayoutNav() {
     <Provider>
       <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
 
-        <DoctorsView
+        {/* <DoctorsView
           data={doctors}
-        />
+        /> */}
 
-
+        <HomeView />
 
 
 

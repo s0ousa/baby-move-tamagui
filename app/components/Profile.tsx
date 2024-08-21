@@ -1,6 +1,6 @@
-import { XStack } from "tamagui";
+import { XStack, Text } from "tamagui";
 import React from "react";
-import { Image, StyleSheet, Text, View } from "react-native";
+import { Image, StyleSheet, View } from "react-native";
 interface ImageInterface {
     url: any
 }
@@ -16,7 +16,7 @@ export default function Profile(props: Profile) {
         },
         circle: {
             width: 64,
-            height: 64,        
+            height: 64,
             borderRadius: 100
         },
         image: {
@@ -26,15 +26,15 @@ export default function Profile(props: Profile) {
         }
     });
     return (
-        <XStack style = {styles.container}>
-                <View style = {styles.circle}>
-                    <Image
-                        source = {props.image.url}
-                        style = {styles.image}
-                    />
-                </View>
-                <Text>Oi, {props.name}</Text>
-            </XStack>
+        <XStack style={styles.container}>
+            <View style={styles.circle}>
+                <Image
+                    source={props.image.url}
+                    style={styles.image}
+                />
+            </View>
+            <Text fontSize={18}> Oi, {props.name}</Text>
+        </XStack>
     );
 }
 
