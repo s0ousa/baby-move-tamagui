@@ -4,7 +4,7 @@ import { HeartPulse } from "@tamagui/lucide-icons"
 
 export function CardMonitor(props) {
     return (
-        <Card w={320} h={140} bg={props.backgroundColor}>
+        <Card w={320} h={140} bg={props.backgroundColor} my={8}>
             <Card.Header>
                 <Text fontSize={16} fontWeight={'bold'}>{props.title}</Text>
                 <XStack mt={12} ml={8} ai={'center'} jc={'space-between'} >

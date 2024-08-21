@@ -67,11 +67,11 @@ function RootLayoutNav() {
     <Provider>
       <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
 
-        <EventsView />
+        {/* <EventsView /> */}
 
         {/* <DoctorsView /> */}
 
-        {/* <HomeView /> */}
+        <HomeView />
 
         {/* <CardMonitor
             value={85}
