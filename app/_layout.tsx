@@ -1,13 +1,13 @@
-import { PortalProvider } from 'tamagui'
+import { Input, PortalProvider, XStack } from 'tamagui'
 import '../tamagui-web.css'
 
 import { useEffect } from 'react'
-import { useColorScheme } from 'react-native'
+import { FlatList, useColorScheme } from 'react-native'
 import { DarkTheme, DefaultTheme, ThemeProvider } from '@react-navigation/native'
 import { useFonts } from 'expo-font'
 import { SplashScreen, Stack } from 'expo-router'
 import { Provider } from './Provider'
-import TelaLogin from './Login/TelaLogin'
+import TelaLogin from './pages/Login/TelaLogin'
 import { DataRegistered } from './components/DataRegistered'
 import { View, Dialog, Button } from 'tamagui'
 import { ModalTeste } from './components/modalteste'
@@ -18,7 +18,9 @@ import { LastDataRegistered } from './components/LastDataRegistered'
 import { MenuItem } from './components/MenuItem'
 import { Menu } from './components/Menu'
 import { CardMonitor } from './components/CardMonitor'
-import { HeartPulse } from "@tamagui/lucide-icons"
+import { HeartPulse, Search } from "@tamagui/lucide-icons"
+import CardDoctor from './components/CardDoctor'
+import { DoctorsView } from './pages/DoctorsView/DoctorsView'
 
 export {
   // Catch any errors thrown by the Layout component.
@@ -56,15 +58,73 @@ export default function RootLayout() {
 function RootLayoutNav() {
   const colorScheme = useColorScheme()
 
+  const doctors = [
+    {
+      name: 'Luis',
+      func: 'Pediatra',
+      phoneNumber: '71 99999-9999'
+    },
+    {
+      name: 'Luis',
+      func: 'Pediatra',
+      phoneNumber: '71 99999-9999'
+    },
+    {
+      name: 'Luis',
+      func: 'Pediatra',
+      phoneNumber: '71 99999-9999'
+    },
+    {
+      name: 'Luis',
+      func: 'Pediatra',
+      phoneNumber: '71 99999-9999'
+    },
+    {
+      name: 'Luis',
+      func: 'Pediatra',
+      phoneNumber: '71 99999-9999'
+    },
+    {
+      name: 'Luis',
+      func: 'Pediatra',
+      phoneNumber: '71 99999-9999'
+    },
+
+    {
+      name: 'Luis',
+      func: 'Pediatra',
+      phoneNumber: '71 99999-9999'
+    },
+
+    {
+      name: 'Luis',
+      func: 'Pediatra',
+      phoneNumber: '71 99999-9999'
+    },
+
+    {
+      name: 'Luis',
+      func: 'Pediatra',
+      phoneNumber: '71 99999-9999'
+    },
+
+
+  ]
+
 
   return (
     <Provider>
       <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
 
-        <View f={1} jc={'center'} ai={'center'}>
+        <DoctorsView
+          data={doctors}
+        />
 
 
-          <CardMonitor
+
+
+
+        {/* <CardMonitor
             value={85}
             unity={"BPM"}
             title={"Frequência cardíaca da gestante"}
@@ -73,8 +133,8 @@ function RootLayoutNav() {
             max={117}
             backgroundColor={"#FFE2E5"}
             iconColor={"#ff0000"}
-          />
-          {/* <LastDataRegistered
+          /> */}
+        {/* <LastDataRegistered
             dataRegistered={
               <DataRegistered
                 value={85}
@@ -88,7 +148,7 @@ function RootLayoutNav() {
           /> */}
 
 
-          {/* <Menu>
+        {/* <Menu>
             <MenuItem
               icon={Home}
               title={"Home"}
@@ -113,12 +173,11 @@ function RootLayoutNav() {
 
 
 
-          {/* <SelectRefeicoes items={itensDoArray} /> */}
-          {/* <CardInicial /> */}
+        {/* <SelectRefeicoes items={itensDoArray} /> */}
+        {/* <CardInicial /> */}
 
-        </View>
       </ThemeProvider>
-    </Provider>
+    </Provider >
   )
 }
 
