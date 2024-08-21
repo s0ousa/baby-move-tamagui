@@ -8,6 +8,7 @@ interface Doctor {
     name: string,
     func: string,
     phoneNumber: string
+    uri: string
 }
 export default function ViewList(props: Doctor) {
     return (
@@ -15,7 +16,7 @@ export default function ViewList(props: Doctor) {
             <Image btlr={16} bblr={16}
 
                 source={{
-                    uri: "https://img.imageboss.me/revista-cdn/cdn/41938/7d8429c45731acf5a27316ce946ece4f005b8947.jpg?1666045869",
+                    uri: props.uri,
                     width: 120,
                     height: 119
                 }}

@@ -60,52 +60,61 @@ function RootLayoutNav() {
 
   const doctors = [
     {
-      name: 'Luis',
+      name: 'Luis Sousa',
       func: 'Pediatra',
-      phoneNumber: '71 99999-9999'
+      phoneNumber: '71 99999-9999',
+      uri: "https://gizmodo.uol.com.br/wp-content/blogs.dir/8/files/2023/09/the-good-doctor.jpg"
+    },
+    {
+      name: 'William Santos',
+      func: 'Pediatra',
+      phoneNumber: '71 99999-9999',
+      uri: 'https://qph.cf2.quoracdn.net/main-qimg-662d308a60ea129d17b5ee2259d41fc8-lq'
+    },
+    {
+      name: 'Gustavo Sousa',
+      func: 'Pediatra',
+      phoneNumber: '71 99999-9999',
+      uri: 'https://midias.correiobraziliense.com.br/_midias/jpg/2021/05/12/greys_anatomy_jesse_williams_1-6651880.jpg'
+    },
+    {
+      name: 'Alexandre Magno',
+      func: 'Pediatra',
+      phoneNumber: '71 99999-9999',
+      uri: 'https://rollingstone.com.br/media/_versions/ellen-pompeo-meredith-grey-greys-anatomy-reproducao_widelg.jpg'
+    },
+    {
+      name: 'Jorge Silva',
+      func: 'Pediatra',
+      phoneNumber: '71 99999-9999',
+      uri: 'https://rollingstone.com.br/media/_versions/ellen-pompeo-meredith-grey-greys-anatomy-reproducao_widelg.jpg'
     },
     {
       name: 'Luis',
       func: 'Pediatra',
-      phoneNumber: '71 99999-9999'
-    },
-    {
-      name: 'Luis',
-      func: 'Pediatra',
-      phoneNumber: '71 99999-9999'
-    },
-    {
-      name: 'Luis',
-      func: 'Pediatra',
-      phoneNumber: '71 99999-9999'
-    },
-    {
-      name: 'Luis',
-      func: 'Pediatra',
-      phoneNumber: '71 99999-9999'
-    },
-    {
-      name: 'Luis',
-      func: 'Pediatra',
-      phoneNumber: '71 99999-9999'
-    },
-
-    {
-      name: 'Luis',
-      func: 'Pediatra',
-      phoneNumber: '71 99999-9999'
-    },
-
-    {
-      name: 'Luis',
-      func: 'Pediatra',
-      phoneNumber: '71 99999-9999'
+      phoneNumber: '71 99999-9999',
+      uri: 'https://rollingstone.com.br/media/_versions/ellen-pompeo-meredith-grey-greys-anatomy-reproducao_widelg.jpg'
     },
 
     {
       name: 'Luis',
       func: 'Pediatra',
-      phoneNumber: '71 99999-9999'
+      phoneNumber: '71 99999-9999',
+      uri: 'https://rollingstone.com.br/media/_versions/ellen-pompeo-meredith-grey-greys-anatomy-reproducao_widelg.jpg'
+    },
+
+    {
+      name: 'Luis',
+      func: 'Pediatra',
+      phoneNumber: '71 99999-9999',
+      uri: 'https://rollingstone.com.br/media/_versions/ellen-pompeo-meredith-grey-greys-anatomy-reproducao_widelg.jpg'
+    },
+
+    {
+      name: 'Luis',
+      func: 'Pediatra',
+      phoneNumber: '71 99999-9999',
+      uri: 'https://rollingstone.com.br/media/_versions/ellen-pompeo-meredith-grey-greys-anatomy-reproducao_widelg.jpg'
     },
 
 
